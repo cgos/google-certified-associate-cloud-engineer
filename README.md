@@ -61,22 +61,85 @@ The core component is a shared library between the different components
 
 ## Planning and Configuring a Cloud Solution
 ### Commparing Compute Options
+* Compute Engine
+* Kubernetes Engine
+* App Engine
+* Cloud Functions
 
 ### Reviewing Compute Engine
+Full Ops with great workloads (most ops effort)
+
+it's all about VM
+
+Use CE when:
+* need control over OS
+* need control over CPU, GPU, SSD, RAM...
+* need a lift and shift an existing app
+* workload is not containerized
+* performing bulk processing
 
 ### Reviewing Compute Engine - Managed Instance Groups
 
+Managed instance groups support:
+* autohealing
+* autoscaling
+* instance are created from a template
+* additional instances are removed 10 minutes after they are no longer needed
+* automatic updates
+
 ### Reviewing Kubernetes Engine
+Full Ops with great workloads
+
+Use K8s when:
+* running containers
+* care about the OS
+* care about portability
+* focus on containers as the unit of deployment
 
 ### Reviewing App Engine
+No ops and Limited workloads
+
+Use App Engine when:
+* value dev over ops
+* want high availability 
+* app portability isn't a primary concern
+* app speaks http
+* don't care about underlying OS
+
+Managed app engine advantages are: runtimes are managed, inexpensive, fast startup
+
+### Reviewing Cloud Functions
+Event triggered
+No ops and greater workloads
+
+Use Functions when:
+* code to execute on cloud events
+* dev is in javascripts
+* code executes within limits (540 sec)
+* don't care about underlying OS
 
 ## Planning and Configuring Data Storage Options
 
+Cloud Datastore: fully managed, NoSQL database built on Cloud Bigtable
+
+Cloud Spanner:  SQL database with horizontal scaling. You don't require analytics.
+
 ## Planning and Configuring Network Resources
+
+Types of load balancing:
+* tcp proxy
+* https
+* ssl proxy
+* network tcp/udp: supports regional load balancing
 
 ## Exploring the Application
 
 ## Planning and Estimating Using the Pricing Calculator
+
+Allow to:
+* determine areas to cut back
+* dertine areas to rework codebase
+* ensure services are affordable at scale
 
 # Deploying and Implementing a Cloud Solution
 ## Deploying the Applications
