@@ -30,9 +30,30 @@ There are two types of accounts:
 
 ## Alerts and Budgets
 
-Budget can be set to a specifieed amount or on the last month spending
+Budget can be set to a specifieed amount or on the last month spending.
+
+Budget tracks spending on a project or billing account
 
 By default three alerts are created: 50%, 90%, 100% when reached will trigger an email
+
+## Billing exports
+Exports come in 2 format: File based or Big Query (Streaming)
+
+File exports are produced daily in a Cloud Storage Bucket
+
+# Cloud SDK
+
+## Installation
+Follow the steps here: [cloud sdk] https://cloud.google.com/sdk/docs/quickstarts
+
+instead of installing all of this locally, look to do the installation in a docker image
+
+Once completed run:
+* ``` gcloud config list ```
+* ``` gcloud info ```
+
+## Using cloud sdk
+The [components] https://cloud.google.com/sdk/docs/components installed can be seen by running ``` gcloud components list```
 
 ## Courses and labs
 
