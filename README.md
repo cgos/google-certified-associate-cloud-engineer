@@ -175,6 +175,17 @@ Set account for your configuration
 ```
 gcloud config set account (ACCOUNT_ID)
 ```
+
+List the gke clusters
+```
+gcloud container clusters list
+```
+
+Resize the gke cluster
+```
+gcloud container clusters resize --num-nodes=1 --zone=us-central1-b fs-dev-app-clusters
+```
+
 ### Configuring Access and Security
 
 
