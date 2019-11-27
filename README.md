@@ -43,6 +43,35 @@ File exports are produced daily in a Cloud Storage Bucket
 
 ## Cloud SDK
 
+Create a new gcloud configuration
+```
+gcloud config configurations create (CONFIG_NAME)
+```
+
+List all of your gcloud configurations
+```
+gcloud config configurations list
+```
+
+Activate another existing gcloud configuration
+```
+gcloud config configurations activate (CONFIG_NAME)
+```
+
+List the settings for your active configuration
+```
+gcloud config list
+```
+
+Assign a project to a configuration
+```
+gcloud config set project (PROJECT_ID)
+```
+
+Set account for your configuration
+```
+gcloud config set account (ACCOUNT_ID)
+```
 ### Installation
 Follow the steps here: [cloud sdk](https://cloud.google.com/sdk/docs/quickstarts)
 
