@@ -218,6 +218,21 @@ gcloud container clusters resize --num-nodes=1 --zone=us-central1-b fs-dev-app-c
 ### Configuring Access and Security
 
 
+# Exam notes
+* IAM roles and scope
+* iam gcloud cli
+    * https://cloud.google.com/sdk/gcloud/reference/organizations/add-iam-policy-binding
+* vm, compute gcloud cli
+    * https://cloud.google.com/compute/docs/storing-retrieving-metadata
+* gke, container gcloud cli
+* Subnet: https://www.computernetworkingnotes.com/ccna-study-guide/subnetting-tutorial-subnetting-explained-with-examples.html
+* firewall rules and priority
+    * https://cloud.google.com/vpc/docs/using-firewalls
+* https://cloud.google.com/sdk/gcloud/reference/compute/networks/subnets/expand-ip-range
+* Storage: https://cloud.google.com/storage/docs/gsutil/commands/acl
+
+
+
 
 # Courses and labs
 
