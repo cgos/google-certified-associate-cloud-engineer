@@ -1,6 +1,23 @@
 # Concepts and notes from Google certified associate cloud engineer
 
 # Setting up Cloud Projects and Accounts
+https://cloud.google.com/sdk/docs/initializing
+After installing the Cloud sdk, you need to run ```gcloud init``` and follow the steps. This also installs bq and gsutil
+
+
+When setting up a new project the following APIs are enabled by default:
+* BQ
+* Google Cloud APIs
+* Datastore API
+* Cloud SQL
+* Cloud Storage
+* Service Management
+* Service Usage
+* Stackdriver Debugger, Logging, Monitoring, Trace
+
+You can create as many projects as allowed by your quota.
+
+It's a good idea to use projects to separate different systems and environments from each other, partly for organization and partly to prevent them from interacting badly with each other.
 
 ## Users and Roles
 Primitive Roles at project levle:
