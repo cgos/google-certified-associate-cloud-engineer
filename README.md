@@ -115,6 +115,9 @@ Q2: You currently have 850TB of Closed-Circuit Television (CCTV) capture data an
 A2: Data cannot be transitioned from Multi-Regional to Regional through Lifecycle Management; that would change the location. The access rate for new data is 250/80--so quite high--but archival data access is very low (100/850000). Because of this, we need to start with Regional or Multi-Regional and should transition to Coldline to meet the “as inexpensively as possible” requirement.
 
 
+Q3: Your team is working on designing an IoT solution. There are thousands of devices that need to send periodic time series data for processing. Which services should be used to ingest and store the data?
+
+A3: Pub/Sub and BigTable. Pub/Sub is able to handle the ingestion, and Bigtable is a great solution for time series data.
 
 ### Commparing Compute Options
 * Compute Engine
@@ -145,6 +148,10 @@ An instance can have the following states:
 * REPAIRING - The instance is being repaired. This can happen because the instance encountered an internal error. During this time, the instance is unusable. If repair is successful, the instance returns to one of the above states.
 * TERMINATED - A user stopped the instance, or the instance encountered a failure. Start the instance again or delete it.
 
+
+Before connecting into a Windows instance you need to have a password generated. Then you can use any RDP client you want.
+
+ 
 
 
 ### Reviewing Compute Engine - Managed Instance Groups
@@ -180,6 +187,9 @@ Use App Engine when:
 * don't care about underlying OS
 
 Managed app engine advantages are: runtimes are managed, inexpensive, fast startup
+
+### App Engine Flex
+Flexible environments are able to use a Dockerfile to create custom runtimes. They specifically run on port 8080.
 
 ### Reviewing Cloud Functions
 Event triggered
