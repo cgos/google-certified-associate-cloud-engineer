@@ -19,6 +19,13 @@ You can create as many projects as allowed by your quota.
 
 It's a good idea to use projects to separate different systems and environments from each other, partly for organization and partly to prevent them from interacting badly with each other.
 
+https://cloud.google.com/compute/docs/startupscript
+
+
+Every VPC network has two implied firewall rules. These rules exist, but are not shown in the Cloud Console:
+* Allow all egress
+* Deny all ingress
+
 ## Users and Roles
 Primitive Roles at project levle:
 * Owner
