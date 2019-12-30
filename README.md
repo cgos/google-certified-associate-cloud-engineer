@@ -49,7 +49,7 @@ There are two types of accounts:
 ### Billing Roles
 
 * Billing Account Admin: manage payment, configure, exports...
-* Billing Account User: link projects to billing accounts
+* Billing Account User: Provides access to associate projects with billing accounts.
 * Billing Account Viewer: access to spending information
 
 ### Alerts and Budgets
